@@ -5,7 +5,7 @@ $scope.qty = 1;
 }
 
  function TimetableCtrl ($scope, $http) {
- $http.get('js/items.json')
+ $http.get('items.json')
 .success(function(data) { $scope.sessions = data.sessions; })
 .error(function(data) { console.log(' error') }) ;
 }
